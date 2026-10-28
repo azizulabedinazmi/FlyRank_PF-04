@@ -104,13 +104,13 @@ Then visit `http://localhost:8000`.
 
 ## ✅ Deployment Checklist <a name="deployment-checklist"></a>
 
-- [ ] Booking link replaced
-- [ ] CV link added
-- [ ] Site renamed in Netlify (Site configuration → Change site name)
-- [ ] Opened in a private window; padlock shows; every link works
-- [ ] Site URL added to LinkedIn and CV
-- [ ] `REPLACE_WITH_SITE_NAME` updated in this README
-- [ ] DNS walkthrough written and submitted in the portal
+- [x] Booking link replaced
+- [x] CV link added
+- [x] Site renamed in Netlify (Site configuration → Change site name)
+- [x] Opened in a private window; padlock shows; every link works
+- [x] Site URL added to LinkedIn and CV
+- [x] `REPLACE_WITH_SITE_NAME` updated in this README
+- [x] DNS walkthrough written and submitted in the portal
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
