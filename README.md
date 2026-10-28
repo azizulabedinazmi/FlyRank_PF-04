@@ -95,22 +95,28 @@ Then visit `http://localhost:8000`.
 
 ## ✏️ Customising <a name="customising"></a>
 
-- Replace `REPLACE_WITH_BOOKING_LINK` in `index.html` with your real booking URL.
-- Add a CV link to the `.links` list when you have a hosted copy (for example a public Drive or GitHub link). The PF-04 rubric asks for working LinkedIn, GitHub, CV, and booking links.
+- Replace the contact link in `index.html` with a real booking URL when you have one.
+- Add a public CV link to the `.links` list when you have a hosted copy (for example a public Drive or GitHub link). The PF-04 rubric asks for working LinkedIn, GitHub, CV, and booking links.
 - Colours live in the `:root` block at the top of the `<style>` tag.
 - At capstone approval, add the FlyRank badge inside the "Posts & capstone" section. Instructions are provided then.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## 🌐 DNS walkthrough <a name="dns-walkthrough"></a>
+
+The assignment DNS explanation is in [dns-walkthrough.md](dns-walkthrough.md).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## ✅ Deployment Checklist <a name="deployment-checklist"></a>
 
-- [x] Booking link replaced
-- [x] CV link added
+- [ ] Booking link added (the current button links to Facebook for contact)
+- [ ] CV link added
 - [x] Site renamed in Netlify (Site configuration → Change site name)
-- [x] Opened in a private window; padlock shows; every link works
-- [x] Site URL added to LinkedIn and CV
-- [x] `REPLACE_WITH_SITE_NAME` updated in this README
-- [x] DNS walkthrough written and submitted in the portal
+- [ ] Opened in a private window; padlock shows; every link works after the latest deploy
+- [ ] Site URL added to LinkedIn and CV
+- [x] Live site URL: https://azizulabedinazmi.netlify.app/
+- [ ] DNS walkthrough submitted in the portal
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
