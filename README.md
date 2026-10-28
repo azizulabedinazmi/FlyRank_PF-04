@@ -13,7 +13,7 @@
     A single-page personal website for Azizul Abedin Azmi: machine learning, computer vision, and data science.
     Plain HTML and CSS, no build step, hosted on Netlify.
     <br /><br />
-    <a href="https://REPLACE_WITH_SITE_NAME.netlify.app/">View Live Site</a>
+    <a href="https://azizulabedinazmi.netlify.app/">View Live Site</a>
   </p>
 </div>
 
@@ -70,7 +70,7 @@ Design choices:
 
 Create your own copy on Netlify with one click:
 
-[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/azizulabedinazmi/personal-website)
+[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/azizulabedinazmi/FlyRank_PF-04)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -79,8 +79,8 @@ Create your own copy on Netlify with one click:
 1. Clone the repo
 
 ```sh
-git clone https://github.com/azizulabedinazmi/personal-website.git
-cd personal-website
+git clone https://github.com/azizulabedinazmi/FlyRank_PF-04.git
+cd FlyRank_PF-04
 ```
 
 2. Open `index.html` in a browser, or serve the folder locally:
@@ -124,6 +124,6 @@ Distributed under the MIT License. See `LICENSE` for more information. Publicati
 
 Azizul Abedin Azmi, [LinkedIn](https://www.linkedin.com/in/azizulabedin/)
 
-Project Link: [https://github.com/azizulabedinazmi/personal-website](https://github.com/azizulabedinazmi/personal-website)
+Project Link: [https://github.com/azizulabedinazmi/FlyRank_PF-04](https://github.com/azizulabedinazmi/FlyRank_PF-04)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
