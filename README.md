@@ -40,6 +40,7 @@ Design choices:
 
 - **One file for the page.** `index.html` holds the markup and the CSS, so every deployed file is easy to explain.
 - **No JavaScript, no dependencies.** Nothing to install, nothing to break.
+- **One dynamic feature: a contact form** handled by [Netlify Forms](https://docs.netlify.com/manage/forms/setup/) (free tier). Netlify detects the form at deploy time and stores each submission, so there is no server of my own. The form only works on the deployed site, not locally.
 - **Light and dark mode** through the `prefers-color-scheme` media query.
 - **Responsive.** A single centred column that works on phones.
 
@@ -58,6 +59,7 @@ Design choices:
 | File | Purpose |
 |---|---|
 | `index.html` | The whole site: content and styles. |
+| `thanks.html` | Confirmation page shown after the contact form is submitted. |
 | `netlify.toml` | Tells Netlify to publish the repo root and sets basic security headers. |
 | `robots.txt` | Lets search engines crawl the site. |
 | `.gitignore` | Keeps OS and editor files out of Git. |
@@ -110,7 +112,9 @@ The assignment DNS explanation is in [dns-walkthrough.md](dns-walkthrough.md).
 
 ## ✅ Deployment Checklist <a name="deployment-checklist"></a>
 
-- [ ] Booking link added (the current button links to Facebook for contact)
+- [ ] Netlify form detection enabled (Forms → Enable form detection) before deploying
+- [ ] Contact form tested on the live site; submission seen in Netlify Forms and email notification received
+- [ ] Booking link added (the "Contact me" button now jumps to the contact form)
 - [ ] CV link added
 - [x] Site renamed in Netlify (Site configuration → Change site name)
 - [ ] Opened in a private window; padlock shows; every link works after the latest deploy

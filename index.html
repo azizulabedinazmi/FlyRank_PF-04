@@ -30,6 +30,15 @@
   ul.items li { margin-bottom: 10px; }
   .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; }
   .tag { font-size: .8rem; color: var(--muted); }
+  form.contact { display: grid; gap: 12px; }
+  form.contact label { display: grid; gap: 4px; font-size: .9rem; color: var(--muted); }
+  form.contact input, form.contact textarea {
+    font: inherit; color: var(--fg); background: var(--card);
+    border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; }
+  form.contact input:focus, form.contact textarea:focus { outline: 2px solid var(--accent); border-color: var(--accent); }
+  form.contact button { justify-self: start; font: inherit; cursor: pointer; padding: 8px 20px;
+    border-radius: 999px; border: 1px solid var(--accent); background: var(--accent); color: var(--bg); }
+  form.contact button:hover, form.contact button:focus { opacity: .9; }
   footer { margin-top: 48px; color: var(--muted); font-size: .9rem; }
 </style>
 </head>
@@ -45,7 +54,7 @@
       Machine Learning Intern at FlyRank AI (remote).
     </p>
     <ul class="links">
-      <li><a class="primary" href="https://www.facebook.com/azizul.abedin.azmi">Contact me</a></li>
+      <li><a class="primary" href="#contact">Contact me</a></li>
       <li><a href="https://www.linkedin.com/in/azizulabedin/">LinkedIn</a></li>
       <li><a href="https://github.com/azizulabedinazmi">GitHub</a></li>
       <li><a href="https://orcid.org/0009-0003-5269-6900">ORCID</a></li>
@@ -99,6 +108,26 @@
     <div class="card">
       Writing and my FlyRank capstone work will appear here. Check back soon.
     </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form class="contact" name="contact" method="POST" action="/thanks.html"
+          data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="contact">
+      <p hidden><label>Don't fill this out: <input name="bot-field"></label></p>
+      <label>Name
+        <input type="text" name="name" autocomplete="name" required>
+      </label>
+      <label>Email
+        <input type="email" name="email" autocomplete="email" required>
+      </label>
+      <label>Message
+        <textarea name="message" rows="5" required></textarea>
+      </label>
+      <button type="submit">Send message</button>
+    </form>
+    <p class="tag">Prefer social media? <a href="https://www.facebook.com/azizul.abedin.azmi">Facebook</a> or <a href="https://www.linkedin.com/in/azizulabedin/">LinkedIn</a>.</p>
   </section>
 
   <footer>
