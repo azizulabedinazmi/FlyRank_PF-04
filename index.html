@@ -15,31 +15,39 @@
   }
   * { box-sizing: border-box; }
   body { margin: 0; background: var(--bg); color: var(--fg);
-         font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
-  main { max-width: 760px; margin: 0 auto; padding: 48px 20px 64px; }
-  h1 { font-size: 2.2rem; margin: 0 0 4px; color: var(--accent); }
-  h2 { font-size: 1.15rem; margin: 40px 0 12px; padding-bottom: 6px; border-bottom: 1px solid var(--border); }
+         font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 20px 64px; }
+  h1 { font-size: clamp(1.85rem, 7vw, 2.2rem); line-height: 1.2; margin: 0 0 4px; color: var(--accent); }
+  h2 { font-size: 1.15rem; line-height: 1.3; margin: 40px 0 12px; padding-bottom: 6px; border-bottom: 1px solid var(--border); }
   .tagline { color: var(--muted); margin: 0 0 16px; }
-  a { color: var(--accent); }
+  a { color: var(--accent); text-decoration-thickness: .12em; text-underline-offset: .15em; }
   .links { display: flex; flex-wrap: wrap; gap: 10px; margin: 20px 0 0; padding: 0; list-style: none; }
-  .links a { display: inline-block; padding: 6px 14px; border: 1px solid var(--border);
+  .links a { display: inline-flex; align-items: center; min-height: 44px; padding: 8px 14px; border: 1px solid var(--border);
              border-radius: 999px; text-decoration: none; background: var(--card); }
-  .links a:hover, .links a:focus { border-color: var(--accent); }
+  .links a:hover, .links a:focus-visible { border-color: var(--accent); }
   .links a.primary { background: var(--accent); color: var(--bg); border-color: var(--accent); }
+  .items a, .tag a { display: inline-flex; align-items: center; min-height: 44px; vertical-align: middle; }
   ul.items { padding-left: 20px; margin: 0; }
   ul.items li { margin-bottom: 10px; }
   .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; }
   .tag { font-size: .8rem; color: var(--muted); }
   form.contact { display: grid; gap: 12px; }
-  form.contact label { display: grid; gap: 4px; font-size: .9rem; color: var(--muted); }
+  form.contact label { display: grid; gap: 4px; color: var(--muted); }
   form.contact input, form.contact textarea {
-    font: inherit; color: var(--fg); background: var(--card);
+    width: 100%; font: inherit; color: var(--fg); background: var(--card);
     border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; }
-  form.contact input:focus, form.contact textarea:focus { outline: 2px solid var(--accent); border-color: var(--accent); }
+  form.contact input, form.contact button { min-height: 44px; }
+  form.contact input:focus-visible, form.contact textarea:focus-visible, form.contact button:focus-visible,
+  a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
   form.contact button { justify-self: start; font: inherit; cursor: pointer; padding: 8px 20px;
     border-radius: 999px; border: 1px solid var(--accent); background: var(--accent); color: var(--bg); }
-  form.contact button:hover, form.contact button:focus { opacity: .9; }
+  form.contact button:hover { opacity: .9; }
   footer { margin-top: 48px; color: var(--muted); font-size: .9rem; }
+  @media (max-width: 480px) {
+    main { padding: 32px 16px 48px; }
+    h2 { margin-top: 32px; }
+    .links { gap: 8px; }
+  }
 </style>
 </head>
 <body>

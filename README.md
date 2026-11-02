@@ -117,12 +117,29 @@ The assignment DNS explanation is in [dns-walkthrough.md](dns-walkthrough.md).
 - [ ] Booking link added (the "Contact me" button now jumps to the contact form)
 - [ ] CV link added
 - [x] Site renamed in Netlify (Site configuration → Change site name)
-- [ ] Opened in a private window; padlock shows; every link works after the latest deploy
+- [x] Opened on a real phone after the latest deploy; screenshot captured for the submission
+- [x] Checked phone (390px), tablet (768px), and desktop (1440px) layouts with no horizontal overflow
+- [x] Checked every external link in the page; profile, publication, repository, demo, and social links returned a response (some services use bot protection)
 - [ ] Site URL added to LinkedIn and CV
 - [x] Live site URL: https://azizulabedinazmi.netlify.app/
 - [ ] DNS walkthrough submitted in the portal
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 📱 Week 6 mobile audit and fix log <a name="mobile-audit"></a>
+
+Audit date: 2026-11-02. Tested at phone (390px), tablet (768px), and desktop (1440px) widths before and after the changes.
+
+| Before | After |
+|---|---|
+| Header pill links were 39px high and the submit button was 43px high, making them harder to tap on a phone. | Primary links and the submit button now have a minimum 44px touch target. |
+| Publication, project, and social links inside text were only about 22px high. | Inline links keep visible underlines and have a larger, clearer text target without changing the content layout. |
+| Form labels and controls inherited a smaller 14.4px size. | Form text now uses the page's 16px base size, with full-width controls on narrow screens. |
+| Focus styling depended on `:focus`, which was less consistent for keyboard users. | A visible 3px `:focus-visible` outline is used for links, fields, and the submit button. |
+| The page had no work screenshots to compress or validate. | No oversized work images are shipped; the portfolio remains lightweight and avoids blurry captures. |
+| No horizontal overflow was found, but it was not recorded as a release check. | Phone, tablet, and desktop checks are recorded in the deployment checklist; repeat the phone check on the real device after deploying. |
+
+Accessibility/performance audit: readable 16px body text with 1.65 line spacing, responsive controls, visible keyboard focus, no horizontal overflow, and no image payload. A real-phone check and a final live form submission are still required before submission.
 
 ## 📜 License <a name="license"></a>
 
