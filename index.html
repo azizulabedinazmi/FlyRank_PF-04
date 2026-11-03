@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Azizul Abedin Azmi | ML & Computer Vision</title>
-<meta name="description" content="Computer Science and Engineering graduate working on machine learning, computer vision, and data science.">
+<title>Azizul Abedin Azmi | Self-supervised computer vision</title>
+<meta name="description" content="Machine learning engineer building image classifiers that work when labeled data is scarce, using self-supervised vision transformers.">
 <style>
   :root {
     --bg: #ffffff; --fg: #1a1a1a; --muted: #5b6470; --accent: #004f90;
@@ -30,6 +30,8 @@
   ul.items { padding-left: 20px; margin: 0; }
   ul.items li { margin-bottom: 10px; }
   .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; }
+  .proof { background: var(--card); border-left: 4px solid var(--accent); border-radius: 0 10px 10px 0; padding: 14px 16px; margin: 20px 0 0; }
+  .proof strong { color: var(--fg); }
   .tag { font-size: .8rem; color: var(--muted); }
   form.contact { display: grid; gap: 12px; }
   form.contact label { display: grid; gap: 4px; color: var(--muted); }
@@ -55,14 +57,16 @@
 
   <header>
     <h1>Azizul Abedin Azmi</h1>
-    <p class="tagline">Machine learning &middot; Computer vision &middot; Data science</p>
+    <p class="tagline">Self-supervised computer vision for image classification when labeled data is scarce.</p>
     <p>
-      I'm a Computer Science and Engineering graduate (East West University, 2026) working on deep learning
-      for medical imaging, agriculture, and self-supervised representation learning. I'm currently a
-      Machine Learning Intern at FlyRank AI (remote).
+      I build image classifiers with self-supervised vision transformers for applied computer vision teams
+      working in areas such as medical imaging and agriculture. I'm a Computer Science and Engineering graduate
+      (East West University, 2026) and currently a Machine Learning Intern at FlyRank AI (remote).
     </p>
+    <p class="proof" id="proof"><strong>The claim:</strong> My models are designed to work with fewer labeled examples. <strong>The evidence:</strong> three peer-reviewed papers, a thesis under review, and six self-supervised ViT models with a working demo.</p>
     <ul class="links">
       <li><a class="primary" href="#contact">Contact me</a></li>
+      <li><a href="#evidence">See the evidence</a></li>
       <li><a href="https://www.linkedin.com/in/azizulabedin/">LinkedIn</a></li>
       <li><a href="https://github.com/azizulabedinazmi">GitHub</a></li>
       <li><a href="https://orcid.org/0009-0003-5269-6900">ORCID</a></li>
@@ -79,8 +83,9 @@
     </ul>
   </section>
 
-  <section>
-    <h2>Publications</h2>
+  <section id="evidence">
+    <h2>Evidence for the claim</h2>
+    <p>These publications and models show the methods I use to build image classifiers when labeled data is limited.</p>
     <ul class="items">
       <li>
         Detection of Cleft and Non-Cleft Lip Features with a Multi-Task Image Processing Network.
@@ -144,4 +149,4 @@
 
 </main>
 </body>
-</html> 
+</html>
